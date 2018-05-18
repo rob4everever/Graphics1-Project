@@ -1,0 +1,25 @@
+﻿  Game.cpp
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(40): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(180): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(181): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(192): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(211): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+GLFW3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(context.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(init.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(input.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(monitor.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(vulkan.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(vulkan.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(window.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_init.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_joystick.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_joystick.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_monitor.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_time.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_time.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_tls.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_tls.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(win32_window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(win32_window.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(wgl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(wgl_context.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+GLFW3.lib(egl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(egl_context.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
+SOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_DXT.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(image_helper.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(SOIL.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\SOIL.pdb'; linking object as if no debug info
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'SOIL.lib(stb_image_aug.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\SOIL.pdb'; linking object as if no debug info
+  Game.vcxproj -> E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\Game.exe

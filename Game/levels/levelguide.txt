@@ -1,0 +1,13 @@
+
+Grass					0
+Straight_horizontal		1
+Straight_vertical		2
+Turn_up_left			3
+Turn_up_right			4
+Turn_down_left			5
+Turn_down_right			6
+Start_line				7
+
+Levels must be rectangles
+Levels must have a startline
+No Gaps! (use 0's)
