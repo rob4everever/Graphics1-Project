@@ -94,5 +94,9 @@ public:
     */
     GLboolean checkCollision(GameObject &a, GameObject &b);
 
+    /*
+    - Changes the starting point texture that shows the current lap
+    - based on the current lap
+    */
     void updateLapTexture();
 };

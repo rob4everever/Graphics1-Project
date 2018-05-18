@@ -43,8 +43,8 @@ public:
     //Starting position of a track
     glm::vec2 startLine;
 
+    //Starting position track piece
     TrackPiece* startPiece;
-    TrackPiece* insPiece;
 
     /*
     - RaceTrack constructor that provides a level file and calls the parseTrackCodes
@@ -65,9 +65,11 @@ public:
     */
     void generateLevel();
 
+    /*
+    - Generates and draws all coins on the map
+    - @param: SpriteRenderer
+    */
     void generateCoins(SpriteRenderer &renderer);
-
-
 
     /*
     - Draws the track pieces in trackPieces to the screen

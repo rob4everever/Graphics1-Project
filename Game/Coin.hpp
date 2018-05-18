@@ -32,8 +32,4 @@ public:
     - @param: Coin texture
     */
     Coin(glm::vec2 coinPosition, Texture sprite);
-
-
-
-
 };
