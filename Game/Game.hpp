@@ -16,6 +16,7 @@
 #include <GLFW\glfw3.h>
 
 #include "Car.hpp"
+#include "Coin.hpp"
 
 /*
 - Represents all the possible states the game could be in
@@ -99,4 +100,6 @@ public:
     - based on the current lap
     */
     void updateLapTexture();
+
+    Coin* findNearestCoin(glm::vec2 p);
 };

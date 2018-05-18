@@ -1,31 +1,8 @@
-﻿  Coin.cpp
-  Game.cpp
-e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(40): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(180): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(181): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(192): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(211): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-  RaceTrack.cpp
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(51): warning C4244: '=': conversion from 'GLfloat' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(52): warning C4244: '=': conversion from 'GLfloat' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(78): warning C4018: '<': signed/unsigned mismatch
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(82): warning C4018: '<': signed/unsigned mismatch
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(86): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(136): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(141): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(142): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-e:\cmp5010b - graphics 1\graphics project 2\game\racetrack.cpp(155): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
-  TrackPiece.cpp
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(15): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(16): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(17): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(18): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(20): warning C4244: 'initializing': conversion from 'GLuint' to 'GLfloat', possible loss of data
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(21): warning C4244: 'initializing': conversion from 'GLuint' to 'GLfloat', possible loss of data
-  Window.cpp
-e:\cmp5010b - graphics 1\graphics project 2\game\window.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-  Generating Code...
-e:\cmp5010b - graphics 1\graphics project 2\game\trackpiece.cpp(31): warning C4715: 'TrackPiece::generateCoin': not all control paths return a value
+﻿  Game.cpp
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(184): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(185): warning C4244: 'initializing': conversion from 'float' to 'GLuint', possible loss of data
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(196): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+e:\cmp5010b - graphics 1\graphics project 2\game\game.cpp(214): warning C4305: '+=': truncation from 'double' to 'GLfloat'
 GLFW3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(context.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
 GLFW3.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(init.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info
 GLFW3.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'GLFW3.lib(input.obj)' or at 'E:\CMP5010B - Graphics 1\Graphics Project 2\Game\Debug\glfw.pdb'; linking object as if no debug info

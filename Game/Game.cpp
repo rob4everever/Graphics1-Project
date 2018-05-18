@@ -17,6 +17,7 @@
 #include "Car.hpp"
 #include "RaceTrack.hpp"
 #include "Player.hpp"
+#include "Coin.hpp"
 
 using namespace irrklang;
 
@@ -37,7 +38,7 @@ std::vector<RaceTrack*> tracks;
 GLuint trackID = 0;
 
 //Time variables
-GLfloat currentTime = glfwGetTime();
+Coin* nearestCoin;
 
 Game::Game(GLuint width, GLuint height) : width(width), height(height), state(GAME_ACTIVE), keys() {}
 
@@ -99,12 +100,10 @@ void Game::processInput(GLfloat deltaTime) {
 
         if (this->keys[GLFW_KEY_A]) {
             car->turnLeft();
-            AIcar->turnLeft();
         }
 
         if (this->keys[GLFW_KEY_D]) {
             car->angle += 0.06f;
-            AIcar->angle += 0.06f;
         }
 
         if (this->keys[GLFW_KEY_S]) {
@@ -166,6 +165,11 @@ void Game::update(GLfloat deltaTime) {
 
     if (this->state == GAME_ACTIVE) {
 
+        nearestCoin = findNearestCoin(AIcar->position);
+        glm::vec2 to = nearestCoin->position - AIcar->position;
+        to *= AIcar->acceleration * deltaTime;
+        AIcar->position += to;
+
         //Zoom in after level is selected
         projection = glm::ortho(0.0f, static_cast<GLfloat>(this->width / 1.5), static_cast<GLfloat>(this->height / 1.5), 0.0f, -1.0f, 1.0f);
         ResourceLoader::getShader("sprite").setMatrix4("projection", projection);
@@ -198,10 +202,9 @@ void Game::update(GLfloat deltaTime) {
         //Car collects a coin when it drives over it and increases boost bar
         for (Coin* coin : track->coins) {
             if (!coin->isCollected) {
-                if (checkCollision(*car, *coin)) {
+                if (checkCollision(*car, *coin) || checkCollision(*AIcar, *coin)) {
                     coin->isCollected = GL_TRUE;
                     player->coinsCollected++;
-                    car->boostBar += 10;
                     SoundEngine->play2D("audio/coincollect.wav", GL_FALSE);
                 }
             }
@@ -229,9 +232,6 @@ void Game::update(GLfloat deltaTime) {
             updateLapTexture();
             this->state = GAME_OVER;
         }
-
-        glm::vec2 newPos = (car->position + glm::vec2(50)) + AIcar->acceleration * track->trackPieces[carTileY][carTileX]->friction * deltaTime;
-        AIcar->position = newPos;
     }
 }
 
@@ -277,7 +277,7 @@ void Game::render() {
 
 GLboolean Game::checkBoundries(Car* vehicle) {
 
-    if ((vehicle->position.x > 0) && (vehicle->position.x < track->width - vehicle->size.x) && (vehicle->position.y  > 0) &&
+    if ((vehicle->position.x > 0) && (vehicle->position.x < track->width - vehicle->size.x) && (vehicle->position.y > 0) &&
         (vehicle->position.y < track->height - vehicle->size.y)) {
         return true;
     }
@@ -302,11 +302,11 @@ void Game::updateLapTexture() {
     Texture start1 = ResourceLoader::getTexture("start1");
     Texture start2 = ResourceLoader::getTexture("start2");
     Texture start3 = ResourceLoader::getTexture("start3");
-    
+
     if (player->currentLap == 1) {
         track->startPiece->sprite = start1;
     }
-    
+
     if (player->currentLap == 2) {
         track->startPiece->sprite = start2;
     }
@@ -314,4 +314,27 @@ void Game::updateLapTexture() {
     if (player->currentLap == 3) {
         track->startPiece->sprite = start3;
     }
+}
+
+Coin* Game::findNearestCoin(glm::vec2 p){
+
+    GLfloat cpx = p.x;
+    GLfloat cpy = p.y;
+    nearestCoin = track->coins[0];
+
+    for (Coin* c : track->coins) {
+
+        if (!c->isCollected) {
+
+            GLfloat coinposx = c->position.x;
+            GLfloat coinposy = c->position.y;
+            GLfloat distanceBetweenCarAndCoin = sqrt(pow(cpx - coinposx, 2) + pow(cpy - coinposy, 2));
+            GLfloat distanceBetweenCarAndCurrentNearestCoin = sqrt(pow(cpx - nearestCoin->position.y, 2) + pow(nearestCoin->position.x - cpy, 2));
+
+            if (distanceBetweenCarAndCoin < distanceBetweenCarAndCurrentNearestCoin) {
+                nearestCoin = c;
+            }
+        }
+    }
+    return nearestCoin;
 }
