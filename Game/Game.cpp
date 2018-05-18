@@ -229,6 +229,9 @@ void Game::update(GLfloat deltaTime) {
             updateLapTexture();
             this->state = GAME_OVER;
         }
+
+        glm::vec2 newPos = (car->position + glm::vec2(50)) + AIcar->acceleration * track->trackPieces[carTileY][carTileX]->friction * deltaTime;
+        AIcar->position = newPos;
     }
 }
 
