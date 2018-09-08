@@ -69,7 +69,7 @@ void Game::init() {
 
     //Audio
     SoundEngine->play2D("audio/bgmusic.mp3", GL_TRUE);
-    SoundEngine->setSoundVolume(0.0);
+    SoundEngine->setSoundVolume(0.5);
 
     //Create level (put this in a loop)
     tracks.push_back(new RaceTrack("levels/one.lvl"));
