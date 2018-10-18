@@ -8,8 +8,8 @@
  
  ## Features
  * Track editor and level selector
- * Accurate car physics[1]
- * AI opponents
+ * Accurate car physics
+ * AI opponents[1]
  * Accurate collision detection
  * Annoying soundtrack
  
