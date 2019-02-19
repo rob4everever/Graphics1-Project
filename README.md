@@ -1,4 +1,4 @@
-﻿# Graphics 1 Project
+﻿# Pixel Racer
  
  ### A 2D, top-down, tile based racing game
   
